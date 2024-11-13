@@ -64,7 +64,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script:
-            cd ci_cd_project
+            cd /home/ci_cd_project
             git pull
             sudo systemctl restart gunicorn
            
